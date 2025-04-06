@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Textile - Calculator</title>
+    <link rel="icon" href="Assets/logo-small.PNG" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Assets/logo-big.PNG" alt="LIFE Textile Logo" class="logo">
+        </header>
+        <main>
+            <h1>Consumption Calculator</h1>
+            <div class="product-selection">
+                <label for="product">Choose your product:</label>
+                <select id="product" name="product">
+                    <option value="" disabled selected>Select a product</option>
+                    <option value="tshirt">T-shirt</option>
+                    <option value="poloshirt">Polo Shirt</option>
+                    <option value="pants">Pants</option>
+                    <option value="boxers">Boxers</option>
+                </select>
+                <button onclick="redirectToProduct()">Confirm</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Tahmid Mutasim. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
