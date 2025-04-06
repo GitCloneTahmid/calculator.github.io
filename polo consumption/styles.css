@@ -1,0 +1,86 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Simple responsive container */
+.container {
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.back-home {
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 0 auto 20px;
+  color: #fff;
+  background-color: red;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Calculation sections */
+.calc-section {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 8px 0 2px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.result {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Final result box styling */
+.result-box {
+  border: 2px solid red;
+  background-color: #e8f0f5;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.result-box p {
+  margin: 6px 0;
+  font-weight: bold;
+  color: #333;
+}
