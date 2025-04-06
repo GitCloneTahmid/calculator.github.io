@@ -8,7 +8,7 @@ function redirectToProduct() {
                 path = "tshirt/tshirt.html";
                 break;
             case "poloshirt":
-                path = "/tshirt/index.html"; // Updated path
+                path = "polo%20consumption/polo.html"; // Updated path
                 break;
             case "pants":
                 path = "pants/pants.html"; // Updated path
