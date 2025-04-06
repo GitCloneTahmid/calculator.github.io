@@ -1,0 +1,274 @@
+/* Reset and basic box-sizing */
+
+.home-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .home-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  display: flex; /* Use Flexbox to center content vertically */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure header spans full width */
+}
+
+header img {
+  max-width: 180px; /* Increased logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+/* Main container */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the main content horizontally */
+  padding: 20px;
+  flex: 1; /* Allow main to grow and fill available space */
+}
+
+/* Table styling */
+#tshirt-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#tshirt-chart th,
+#tshirt-chart td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#tshirt-chart th {
+  background-color: #f0f0f0;
+}
+
+/* Calculator form styling */
+#calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#calculator form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#calculator form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#calculator form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#calculator form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensure inputs take full width of their container */
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  font-size: 0.9rem;
+  color: #666;
+  width: 100%; /* Ensure footer spans full width */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Changed calculate button color to red */
+#calculator button {
+  grid-column: 1 / -1;
+  padding: 12px;
+  cursor: pointer;
+  background: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Add smooth hover transition */
+}
+
+#calculator button:hover {
+  background: #cc0000; /* Slightly darker red on hover */
+}
+
+/* Results styling with better highlighting */
+#results {
+  background: #f0f8ff;
+  border: 2px solid #e60000;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#results p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design for All Devices */
+@media (max-width: 1024px) {
+  /* Tablets and smaller laptops */
+  header img {
+    max-width: 160px; /* Slightly reduce logo size */
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    width: 95%; /* Slightly wider on tablets */
+  }
+
+  #calculator form {
+    gap: 10px; /* Reduce gap for better spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablets and larger phones */
+  header img {
+    max-width: 150px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #calculator form {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  #tshirt-chart th,
+  #tshirt-chart td {
+    padding: 6px; /* Reduce padding for smaller screens */
+    font-size: 0.9rem; /* Smaller text */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Smaller phones */
+  header img {
+    max-width: 120px; /* Further reduce logo size */
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 15px; /* Reduce padding */
+  }
+
+  #calculator {
+    padding: 15px;
+  }
+
+  #calculator form input {
+    padding: 6px; /* Smaller input padding */
+  }
+
+  #calculator button {
+    padding: 10px;
+    font-size: 14px; /* Smaller button text */
+  }
+
+  #tshirt-chart th,
+  #tshirt-chart td {
+    padding: 5px;
+    font-size: 0.8rem; /* Even smaller text */
+  }
+
+  #results p {
+    font-size: 1rem; /* Adjust results text size */
+  }
+}
+
+@media (max-width: 400px) {
+  /* Very small phones */
+  header img {
+    max-width: 100px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #calculator {
+    padding: 10px;
+  }
+
+  #tshirt-chart th,
+  #tshirt-chart td {
+    padding: 4px;
+    font-size: 0.75rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
