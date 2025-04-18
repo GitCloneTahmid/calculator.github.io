@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxers Consumption Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="../Assets/logo-small.PNG">
+</head>
+<body>
+
+    <header>
+        <img src="../Assets/logo-big.PNG" alt="Life Textiles Logo" />
+        <h1>Boxers Consumption Calculator</h1>
+        <a href="../index.html" class="home-button">Home</a>
+    
+    </header>
+
+
+    <main>
+    <!-- Calculator Section -->
+    <section id="calculator">
+        <h2>Calculate Fabric Consumption</h2>
+  
+        <!-- Input Form -->
+        <form id="consumptionForm">
+          <div>
+            <label for="boxerLength">Boxers Length (cm):</label>
+            <input type="number" id="boxerlength" required />
+          </div>
+  
+          <div>
+            <label for="waistbandheight">Waist Band Height (cm):</label>
+            <input type="number" id="waistbandheight" required />
+          </div>
+  
+          <div>
+            <label for="halfhip">1/2 Hip Width (cm):</label>
+            <input type="number" id="halfhip" required />
+          </div>
+  
+          <div>
+            <label for="allowancelengthandheight">Allowance for Length &amp; Waistband Height (cm):</label>
+            <input type="number" id="allowancelengthandheight" required />
+          </div>
+  
+          <div>
+            <label for="halfhipallowance">Allowance for 1/2 Hip Widht(cm):</label>
+            <input type="number" id="halfhipallowance" required />
+          </div>
+  
+          <div>
+            <label for="gsm">GSM:</label>
+            <input type="number" id="gsm" required />
+          </div>
+  
+          <div>
+            <label for="wastage">Wastage (%):</label>
+            <input type="number" id="wastage" required />
+          </div>
+  
+          <div>
+            <label for="quantity">Total Quantity (pcs):</label>
+            <input type="number" id="quantity" required />
+          </div>
+  
+          <button type="submit">Calculate</button>
+        </form>
+  
+        <!-- Results Display -->
+        <div id="results">
+          <p>Consumption <strong>per Boxers</strong>: <span id="perBoxers">0</span> kg</p>
+          <p>Consumption <strong>per Dozen</strong>: <span id="perDozen">0</span> kg</p>
+          <p><strong>Total</strong> Consumption: <span id="totalConsumption">0</span> kg</p>
+        </div>
+      </section>
+     <footer class="footer">
+    &copy; 2025 Tahmid Mutasim. All rights reserved.
+  </footer>
+    </main>
+
+
+      <!-- Link to JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
