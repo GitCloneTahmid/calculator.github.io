@@ -11,10 +11,10 @@ function redirectToProduct() {
                 path = "polo%20consumption/polo.html"; // Updated path
                 break;
             case "pants":
-                path = "pants/pants.html"; // Updated path
+                path = "pant%20consumption/pant.html"; // Updated path
                 break;
             case "boxers":
-                path = "boxers/boxers.html";
+                path = "boxers%20consumption/boxers.html";
                 break;
             default:
                 path = "index.html"; // Fallback to homepage
