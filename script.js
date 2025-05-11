@@ -8,16 +8,16 @@ function redirectToProduct() {
                 path = "tshirt/tshirt.html";
                 break;
             case "poloshirt":
-                path = "polo%20consumption/polo.html"; // Updated path
+                path = "polo%20consumption/polo.html"; 
                 break;
             case "pants":
-                path = "pant%20consumption/pant.html"; // Updated path
+                path = "pant%20consumption/pant.html"; 
                 break;
             case "boxers":
                 path = "boxers%20consumption/boxers.html";
                 break;
             default:
-                path = "index.html"; // Fallback to homepage
+                path = "index.html"; // back to homepage
         }
         window.location.href = path;
     } else {
