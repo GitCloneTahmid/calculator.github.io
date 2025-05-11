@@ -36,7 +36,7 @@ document.getElementById('consumptionForm').addEventListener('submit', function(e
     12
   ) / 10000000;
 
-  // Include wastage
+  // Include wastage ChatGPT included (clean code)
   const finalPerDozen = basePerDozen * (1 + wastage / 100);
 
   // Consumption per T-Shirt
