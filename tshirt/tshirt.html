@@ -70,50 +70,50 @@
     <section id="calculator">
       <h2>Calculate Fabric Consumption</h2>
 
-      <!-- Input Form -->
-      <form id="consumptionForm">
-        <div>
-          <label for="bodyLength">Body Length (cm):</label>
-          <input type="number" id="bodyLength" required />
-        </div>
+<!-- Input Form -->
+<form id="consumptionForm">
+  <div>
+    <label for="bodyLength">Body Length (cm):</label>
+    <input type="number" id="bodyLength" step="any" required />
+  </div>
 
-        <div>
-          <label for="sleeveLength">Sleeve Length (cm):</label>
-          <input type="number" id="sleeveLength" required />
-        </div>
+  <div>
+    <label for="sleeveLength">Sleeve Length (cm):</label>
+    <input type="number" id="sleeveLength" step="any" required />
+  </div>
 
-        <div>
-          <label for="halfChest">1/2 Chest Width (cm):</label>
-          <input type="number" id="halfChest" required />
-        </div>
+  <div>
+    <label for="halfChest">1/2 Chest Width (cm):</label>
+    <input type="number" id="halfChest" step="any" required />
+  </div>
 
-        <div>
-          <label for="allowanceBody">Allowance for Body &amp; Sleeve (cm):</label>
-          <input type="number" id="allowanceBody" required />
-        </div>
+  <div>
+    <label for="allowanceBody">Allowance for Body &amp; Sleeve (cm):</label>
+    <input type="number" id="allowanceBody" step="any" required />
+  </div>
 
-        <div>
-          <label for="allowanceChest">Allowance for Chest (cm):</label>
-          <input type="number" id="allowanceChest" required />
-        </div>
+  <div>
+    <label for="allowanceChest">Allowance for Chest (cm):</label>
+    <input type="number" id="allowanceChest" step="any" required />
+  </div>
 
-        <div>
-          <label for="gsm">GSM:</label>
-          <input type="number" id="gsm" required />
-        </div>
+  <div>
+    <label for="gsm">GSM:</label>
+    <input type="number" id="gsm" step="any" required />
+  </div>
 
-        <div>
-          <label for="wastage">Wastage (%):</label>
-          <input type="number" id="wastage" required />
-        </div>
+  <div>
+    <label for="wastage">Wastage (%):</label>
+    <input type="number" id="wastage" step="any" required />
+  </div>
 
-        <div>
-          <label for="quantity">Total Quantity (pcs):</label>
-          <input type="number" id="quantity" required />
-        </div>
+  <div>
+    <label for="quantity">Total Quantity (pcs):</label>
+    <input type="number" id="quantity" step="any" required />
+  </div>
 
-        <button type="submit">Calculate</button>
-      </form>
+  <button type="submit">Calculate</button>
+</form>
 
       <!-- Results Display -->
       <div id="results">
